@@ -10,6 +10,10 @@ apply from: '../shared_dependencies.gradle'
 android {
     compileSdk 32
 
+    lintOptions {
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.anggitdev.myapplication"
         minSdk 21

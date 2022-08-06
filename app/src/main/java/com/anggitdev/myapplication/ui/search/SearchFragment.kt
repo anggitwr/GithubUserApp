@@ -1,5 +1,6 @@
 package com.anggitdev.myapplication.ui.search
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -47,6 +48,7 @@ class SearchFragment : Fragment() {
         activityContext.title = getString(R.string.app_name)
     }
 
+    @SuppressLint("CheckResult")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

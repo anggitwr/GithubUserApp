@@ -7,15 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anggit.favorite.FavoriteViewModel
-import com.anggit.favorite.favoriteModule
 import com.anggitdev.myapplication.ui.main.MainActivity
 import com.anggitdev.favorite.databinding.FragmentFavoriteBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
 
 class FavoriteFragment : Fragment() {

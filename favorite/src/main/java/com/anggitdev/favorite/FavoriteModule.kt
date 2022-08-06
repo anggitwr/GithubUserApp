@@ -1,4 +1,4 @@
-package com.anggit.favorite
+package com.anggitdev.favorite
 
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module

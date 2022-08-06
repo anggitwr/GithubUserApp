@@ -1,4 +1,4 @@
-package com.anggit.favorite
+package com.anggitdev.favorite
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

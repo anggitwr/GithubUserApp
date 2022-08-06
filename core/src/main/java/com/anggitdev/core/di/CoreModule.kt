@@ -40,8 +40,8 @@ val networkModule = module {
     single{
         val hostname = "api.github.com"
         val certificatePinner = CertificatePinner.Builder()
-            .add(hostname, "sha256/uyPYgclc5Jt69vKu92vci6etcBDY8UNTyrHQZJpVoZY=")
-            .add(hostname, "sha256/e0IRz5Tio3GA1Xs4fUVWmH1xHDiH2dMbVtCBSkOIdqM=")
+            .add(hostname, BuildConfig.KEY1)
+            .add(hostname, BuildConfig.KEY2)
             .build()
         val loggingInterceptor =if (BuildConfig.DEBUG) {
             HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
@@ -61,7 +61,6 @@ val networkModule = module {
             .certificatePinner(certificatePinner)
             .connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)
-
             .build()
     }
     single {

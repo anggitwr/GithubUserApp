@@ -15,7 +15,7 @@ android {
         targetSdk 32
 
         buildConfigField "String", 'BASE_URL', '"https://api.github.com/"'
-        buildConfigField "String", 'TOKEN', '"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"'
+        buildConfigField "String", 'TOKEN', '"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"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

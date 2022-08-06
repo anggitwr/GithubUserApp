@@ -48,7 +48,6 @@ class DetailFragment : Fragment() {
         activityContext.supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            setHasOptionsMenu(true)
             title = getString(R.string.detail, username.firstUpper())
         }
 
@@ -114,7 +113,6 @@ class DetailFragment : Fragment() {
         binding?.viewpager?.adapter = null
         _binding = null
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
